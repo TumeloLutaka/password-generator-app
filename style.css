@@ -51,6 +51,7 @@
   --padding-375: var(--pte-14);
   --padding-400: var(--pte-16);
   --padding-425: var(--pte-18);
+  --padding-450: var(--pte-18);
   --padding-600: var(--pte-32);
 
   /* Spacing */
@@ -345,7 +346,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .generator__button {
-    padding-block: var(--padding-425);
+    padding-block: var(--padding-450);
   }
 
   .generator__controls {
