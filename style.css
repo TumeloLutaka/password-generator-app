@@ -26,6 +26,8 @@
   --pte-8: 0.5em;
   --pte-14: 0.875em;
   --pte-16: 1em;
+  --pte-18: 1.125em;
+  --pte-20: 1.25em;
   --pte-24: 1.5em;
   --pte-32: 2em;
 
@@ -48,6 +50,7 @@
   /* Padding */
   --padding-375: var(--pte-14);
   --padding-400: var(--pte-16);
+  --padding-425: var(--pte-18);
   --padding-600: var(--pte-32);
 
   /* Spacing */
@@ -118,7 +121,7 @@ main {
   align-items: center;
   gap: var(--spacing-400);
   width: 100%;
-  padding-block: var(--spacing-400);
+  padding-block: var(--padding-425);
   background-color: var(--clr-primary-200);
   border: none;
 }
@@ -333,15 +336,16 @@ input[type="range"]::-moz-range-thumb {
   margin-bottom: var(--spacing-400);
 }
 
-/* =============================== */
-/* ========== MEDIA QUERIES ====== */
-/* =============================== */
 @media (min-width: 48em) {
   :root {
     --font-style-body: var(--typo-preset-3);
     --font-style-password: var(--typo-preset-1);
     --font-style-strength-text: var(--typo-preset-2);
     --font-style-title: var(--typo-preset-2);
+  }
+
+  .generator__button {
+    padding-block: var(--padding-425);
   }
 
   .generator__controls {
